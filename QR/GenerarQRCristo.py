@@ -1,6 +1,6 @@
 import qrcode
 import matplotlib.pyplot as plt
-from function.database import *  # Asegúrate de que esto tenga la conexión correcta a MongoDB y la colección 'collection_turistas'
+from function.ConexionDB import *  # Asegúrate de que esto tenga la conexión correcta a MongoDB y la colección 'collection_turistas'
 from datetime import datetime
 
 # Información del Lugar

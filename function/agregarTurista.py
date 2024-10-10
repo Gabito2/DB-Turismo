@@ -1,4 +1,4 @@
-from database import *
+from ConexionDB import *
 from datetime import datetime
 
 turista = {
