@@ -1,7 +1,13 @@
 from mongoengine import Document, StringField, IntField, connect
 
-# Conexión a MongoDB
-connect(db='Turismo', host="mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
+from pymongo import MongoClient
+
+client = MongoClient("mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
+db = client['Turismo']
+collection_turistas = db['turista']
+
+#connect(db='Turismo', host="mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
+
 
 # Definir el documento (equivalente a una tabla en SQL)
 class Turista(Document):
@@ -12,7 +18,7 @@ class Turista(Document):
     comentario = StringField(max_length=200)
 
 # DAO para Turista
-class TuristaDAO:
+class turista:
 
     @staticmethod
     def crear_turista(id, nombre, apellido, provincia, comentario=""):
@@ -30,18 +36,35 @@ class TuristaDAO:
         return turista
 
     @staticmethod
+    def obtener_turista_por_nombre(nombre):
+        """
+        Obtener un turista por su nombre.
+        """
+
+        query = db.collection_turistas.find({"nombre": nombre})
+
+        return query
+
+    @staticmethod
+    def obtener_turista_por_apellido(apellido):
+        """
+        Obtener un turista por su apellido.
+        """
+        return Turista.objects(apellido=apellido)
+
+    @staticmethod
     def obtener_todos_los_turistas():
         """
         Obtener todos los turistas de la base de datos.
         """
-        return Turista.objects()
+        return connect
 
     @staticmethod
-    def obtener_turista_por_id(turista_id):
+    def obtener_turista_por_id(id):
         """
         Obtener un turista por su ID.
         """
-        return Turista.objects(id=turista_id).first()
+        return Turista.objects(id=id).first()
 
     @staticmethod
     def obtener_turistas_por_provincia(provincia):
@@ -51,31 +74,19 @@ class TuristaDAO:
         return Turista.objects(provincia=provincia)
 
     @staticmethod
-    def actualizar_turista(turista_id, **kwargs):
+    def obtener_turistas_por_comentario(comentario):
         """
-        Actualizar los detalles de un turista usando su ID.
+        Obtener todos los turistas que tienen un comentario particular.
         """
-        turista = Turista.objects(id=turista_id).first()
-        if turista:
-            turista.update(**kwargs)
-            return turista.reload()
-        return None
-
-    @staticmethod
-    def eliminar_turista(turista_id):
-        """
-        Eliminar un turista de la base de datos usando su ID.
-        """
-        turista = Turista.objects(id=turista_id).first()
-        if turista:
-            turista.delete()
-            return True
-        return False
+        return Turista.objects(comentario=comentario)
 
     @staticmethod
     def obtener_todos_los_turistas():
         """
         Obtener todos los turistas de la base de datos.
         """
-        return Turista.objects()
+
+        query = connect.Turista.find()
+
+        return query
 
