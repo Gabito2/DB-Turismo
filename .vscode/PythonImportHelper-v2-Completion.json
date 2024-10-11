@@ -1,0 +1,736 @@
+[
+    {
+        "label": "conexionDB",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "conexionDB",
+        "description": "conexionDB",
+        "detail": "conexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "turista",
+        "importPath": "modelado",
+        "description": "modelado",
+        "isExtraImport": true,
+        "detail": "modelado",
+        "documentation": {}
+    },
+    {
+        "label": "collection_turistas",
+        "importPath": "ConexionDB",
+        "description": "ConexionDB",
+        "isExtraImport": true,
+        "detail": "ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ConexionDB",
+        "description": "ConexionDB",
+        "isExtraImport": true,
+        "detail": "ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ConexionDB",
+        "description": "ConexionDB",
+        "isExtraImport": true,
+        "detail": "ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "ConexionDB",
+        "description": "ConexionDB",
+        "isExtraImport": true,
+        "detail": "ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "MongoClient",
+        "importPath": "pymongo",
+        "description": "pymongo",
+        "isExtraImport": true,
+        "detail": "pymongo",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "BaseHTTPRequestHandler",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPServer",
+        "importPath": "http.server",
+        "description": "http.server",
+        "isExtraImport": true,
+        "detail": "http.server",
+        "documentation": {}
+    },
+    {
+        "label": "parse_qs",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "parse_qs",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "parse_qs",
+        "importPath": "urllib.parse",
+        "description": "urllib.parse",
+        "isExtraImport": true,
+        "detail": "urllib.parse",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "qrcode",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "qrcode",
+        "description": "qrcode",
+        "detail": "qrcode",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "function.ConexionDB",
+        "description": "function.ConexionDB",
+        "isExtraImport": true,
+        "detail": "function.ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "turista_for_dao",
+        "importPath": "turista",
+        "description": "turista",
+        "isExtraImport": true,
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "turista",
+        "importPath": "turista",
+        "description": "turista",
+        "isExtraImport": true,
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_ultimo_id",
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "isExtraImport": true,
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "Document",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "StringField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "IntField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "connect",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "turista_DAO",
+        "kind": 5,
+        "importPath": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "description": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "peekOfCode": "turista_DAO = turista()\ndatos = turista_DAO.get_turista_by_id(1)\nprint(f\"Turista: {datos}\")",
+        "detail": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "documentation": {}
+    },
+    {
+        "label": "datos",
+        "kind": 5,
+        "importPath": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "description": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "peekOfCode": "datos = turista_DAO.get_turista_by_id(1)\nprint(f\"Turista: {datos}\")",
+        "detail": ".ipynb_checkpoints.DAOturista-checkpoint",
+        "documentation": {}
+    },
+    {
+        "label": "turista",
+        "kind": 5,
+        "importPath": "function.agregarTurista",
+        "description": "function.agregarTurista",
+        "peekOfCode": "turista = {\n    \"ID\": 1,\n    \"Nombre\": \"Nombre Anonimo\", \n    \"Apellido\": \"Apellido Anonimo\",\n    \"Comentario\": \"Sin Comentario\",\n    \"fecha_hora\": datetime.now()\n}\nlugar = {\n    \"ID\": 4,\n    \"Nombre\": \"Lugar Anonimo\",",
+        "detail": "function.agregarTurista",
+        "documentation": {}
+    },
+    {
+        "label": "lugar",
+        "kind": 5,
+        "importPath": "function.agregarTurista",
+        "description": "function.agregarTurista",
+        "peekOfCode": "lugar = {\n    \"ID\": 4,\n    \"Nombre\": \"Lugar Anonimo\",\n    \"Comentario\": \"Sin Comentario\"\n}\ncollection_turistas.insert_one(turista)\ncollection_lugares.insert_one(lugar)\nprint(\"Turista agregado\")",
+        "detail": "function.agregarTurista",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "function.ConexionDB",
+        "description": "function.ConexionDB",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "function.ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "function.ConexionDB",
+        "description": "function.ConexionDB",
+        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "function.ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "collection_turistas",
+        "kind": 5,
+        "importPath": "function.ConexionDB",
+        "description": "function.ConexionDB",
+        "peekOfCode": "collection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "function.ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "function.ConexionDB",
+        "description": "function.ConexionDB",
+        "peekOfCode": "collection_lugares = db['lugar']",
+        "detail": "function.ConexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "ComentarioHandler",
+        "kind": 6,
+        "importPath": "paginawebCristo.servidor",
+        "description": "paginawebCristo.servidor",
+        "peekOfCode": "class ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'\n            if comentario:\n                collection_lugares.update_one(",
+        "detail": "paginawebCristo.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "paginawebCristo.servidor",
+        "description": "paginawebCristo.servidor",
+        "peekOfCode": "def run(server_class=HTTPServer, handler_class=ComentarioHandler, port=8080):\n    server_address = ('', port)\n    httpd = server_class(server_address, handler_class)\n    print(f\"Servidor corriendo en el puerto {port}\")\n    httpd.serve_forever()\nif __name__ == '__main__':\n    run()",
+        "detail": "paginawebCristo.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "paginawebCristo.servidor",
+        "description": "paginawebCristo.servidor",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)",
+        "detail": "paginawebCristo.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "paginawebCristo.servidor",
+        "description": "paginawebCristo.servidor",
+        "peekOfCode": "db = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]",
+        "detail": "paginawebCristo.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "paginawebCristo.servidor",
+        "description": "paginawebCristo.servidor",
+        "peekOfCode": "collection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'",
+        "detail": "paginawebCristo.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "ComentarioHandler",
+        "kind": 6,
+        "importPath": "paginawebEstacion.servidor",
+        "description": "paginawebEstacion.servidor",
+        "peekOfCode": "class ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'\n            if comentario:\n                collection_lugares.update_one(",
+        "detail": "paginawebEstacion.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "paginawebEstacion.servidor",
+        "description": "paginawebEstacion.servidor",
+        "peekOfCode": "def run(server_class=HTTPServer, handler_class=ComentarioHandler, port=8080):\n    server_address = ('', port)\n    httpd = server_class(server_address, handler_class)\n    print(f\"Servidor corriendo en el puerto {port}\")\n    httpd.serve_forever()\nif __name__ == '__main__':\n    run()",
+        "detail": "paginawebEstacion.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "paginawebEstacion.servidor",
+        "description": "paginawebEstacion.servidor",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)",
+        "detail": "paginawebEstacion.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "paginawebEstacion.servidor",
+        "description": "paginawebEstacion.servidor",
+        "peekOfCode": "db = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]",
+        "detail": "paginawebEstacion.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "paginawebEstacion.servidor",
+        "description": "paginawebEstacion.servidor",
+        "peekOfCode": "collection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'",
+        "detail": "paginawebEstacion.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "ComentarioHandler",
+        "kind": 6,
+        "importPath": "paginawebPlaza.servidor",
+        "description": "paginawebPlaza.servidor",
+        "peekOfCode": "class ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'\n            if comentario:\n                collection_lugares.update_one(",
+        "detail": "paginawebPlaza.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "run",
+        "kind": 2,
+        "importPath": "paginawebPlaza.servidor",
+        "description": "paginawebPlaza.servidor",
+        "peekOfCode": "def run(server_class=HTTPServer, handler_class=ComentarioHandler, port=8080):\n    server_address = ('', port)\n    httpd = server_class(server_address, handler_class)\n    print(f\"Servidor corriendo en el puerto {port}\")\n    httpd.serve_forever()\nif __name__ == '__main__':\n    run()",
+        "detail": "paginawebPlaza.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "paginawebPlaza.servidor",
+        "description": "paginawebPlaza.servidor",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)",
+        "detail": "paginawebPlaza.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "paginawebPlaza.servidor",
+        "description": "paginawebPlaza.servidor",
+        "peekOfCode": "db = client['Turismo']\ncollection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]",
+        "detail": "paginawebPlaza.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "paginawebPlaza.servidor",
+        "description": "paginawebPlaza.servidor",
+        "peekOfCode": "collection_lugares = db['lugar']\n# Servidor HTTP\nclass ComentarioHandler(BaseHTTPRequestHandler):\n    def do_POST(self):\n        if self.path == '/comentario':\n            content_length = int(self.headers['Content-Length'])\n            post_data = self.rfile.read(content_length).decode('utf-8')\n            data = parse_qs(post_data)\n            comentario = data.get('comentario', [''])[0]\n            # Insertar el comentario en la colección 'lugar'",
+        "detail": "paginawebPlaza.servidor",
+        "documentation": {}
+    },
+    {
+        "label": "monumento",
+        "kind": 5,
+        "importPath": "QR.GeneraeQrEstacion",
+        "description": "QR.GeneraeQrEstacion",
+        "peekOfCode": "monumento = {\n    \"Codigo QR\" : \"https://gabito2.github.io/estacion.github.io/\"\n}\n# URL de Google Maps\nurl_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja",
+        "detail": "QR.GeneraeQrEstacion",
+        "documentation": {}
+    },
+    {
+        "label": "url_google_maps",
+        "kind": 5,
+        "importPath": "QR.GeneraeQrEstacion",
+        "description": "QR.GeneraeQrEstacion",
+        "peekOfCode": "url_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)",
+        "detail": "QR.GeneraeQrEstacion",
+        "documentation": {}
+    },
+    {
+        "label": "qr",
+        "kind": 5,
+        "importPath": "QR.GeneraeQrEstacion",
+        "description": "QR.GeneraeQrEstacion",
+        "peekOfCode": "qr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)\n# Crear imagen del QR\nimagen_qr = qr.make_image(fill='black', back_color='white')",
+        "detail": "QR.GeneraeQrEstacion",
+        "documentation": {}
+    },
+    {
+        "label": "imagen_qr",
+        "kind": 5,
+        "importPath": "QR.GeneraeQrEstacion",
+        "description": "QR.GeneraeQrEstacion",
+        "peekOfCode": "imagen_qr = qr.make_image(fill='black', back_color='white')\n# Guardar el QR en un archivo\nimagen_qr.save(\"qr_Estacion.png\")\n# Mostrar el QR usando matplotlib\nplt.imshow(imagen_qr)\nplt.axis('off')  # No mostrar ejes\nplt.show()\nprint(\"QR generado, guardado como qr_Estacion.png y mostrado en pantalla.\")",
+        "detail": "QR.GeneraeQrEstacion",
+        "documentation": {}
+    },
+    {
+        "label": "obtener_ultimo_id",
+        "kind": 2,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "def obtener_ultimo_id():\n    # Obtener el documento con el ID más alto\n    ultimo_turista = collection_turistas.find_one(\n        sort=[(\"ID\", -1)]\n    )\n    # Si no hay documentos, empezar desde 0\n    if ultimo_turista is None:\n        return 0\n    return ultimo_turista.get(\"ID\", 0)\n# Función para crear un turista anónimo e insertarlo en la base de datos",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "crear_turista_anonimo",
+        "kind": 2,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "def crear_turista_anonimo():\n    ultimo_id = obtener_ultimo_id()\n    nuevo_id = ultimo_id + 1\n    turista_anonimo = {\n        \"ID\": nuevo_id,\n        \"Nombre\": \"Nombre Anonimo\",\n        \"Apellido\": \"Apellido Anonimo\",\n        \"Provincia\": \"Provincia Desconocida\",\n        \"Comentario\": \"Sin Comentario\",\n        \"fecha_hora\": datetime.now()",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "monumento",
+        "kind": 5,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "monumento = {\n    \"Codigo QR\": \"https://gabito2.github.io/proyectDB.github.io/\"\n}\n# URL de Google Maps\nurl_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "url_google_maps",
+        "kind": 5,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "url_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "qr",
+        "kind": 5,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "qr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)\n# Crear imagen del QR\nimagen_qr = qr.make_image(fill='black', back_color='white')",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "imagen_qr",
+        "kind": 5,
+        "importPath": "QR.GenerarQRCristo",
+        "description": "QR.GenerarQRCristo",
+        "peekOfCode": "imagen_qr = qr.make_image(fill='black', back_color='white')\n# Guardar el QR en un archivo\nimagen_qr.save(\"qr_CristoPortezuelo.png\")\n# Mostrar el QR usando matplotlib\nplt.imshow(imagen_qr)\nplt.axis('off')  # No mostrar ejes\nplt.show()\nprint(\"QR generado, guardado como qr_CristoPortezuelo.png y mostrado en pantalla.\")\n# Función para obtener el último ID en la colección\ndef obtener_ultimo_id():",
+        "detail": "QR.GenerarQRCristo",
+        "documentation": {}
+    },
+    {
+        "label": "monumento",
+        "kind": 5,
+        "importPath": "QR.GenerarQRPlaza",
+        "description": "QR.GenerarQRPlaza",
+        "peekOfCode": "monumento = {\n    \"Codigo QR\" : \"https://gabito2.github.io/plazaPrincipal.github.io/\"\n}\n# URL de Google Maps\nurl_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja",
+        "detail": "QR.GenerarQRPlaza",
+        "documentation": {}
+    },
+    {
+        "label": "url_google_maps",
+        "kind": 5,
+        "importPath": "QR.GenerarQRPlaza",
+        "description": "QR.GenerarQRPlaza",
+        "peekOfCode": "url_google_maps = monumento[\"Codigo QR\"]\n# Generar el QR\nqr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)",
+        "detail": "QR.GenerarQRPlaza",
+        "documentation": {}
+    },
+    {
+        "label": "qr",
+        "kind": 5,
+        "importPath": "QR.GenerarQRPlaza",
+        "description": "QR.GenerarQRPlaza",
+        "peekOfCode": "qr = qrcode.QRCode(\n    version=1,  # Tamaño del QR\n    error_correction=qrcode.constants.ERROR_CORRECT_L,  # Nivel de corrección de errores\n    box_size=10,  # Tamaño de cada caja\n    border=4  # Borde alrededor del QR\n)\nqr.add_data(url_google_maps)  # Añadir URL al QR\nqr.make(fit=True)\n# Crear imagen del QR\nimagen_qr = qr.make_image(fill='black', back_color='white')",
+        "detail": "QR.GenerarQRPlaza",
+        "documentation": {}
+    },
+    {
+        "label": "imagen_qr",
+        "kind": 5,
+        "importPath": "QR.GenerarQRPlaza",
+        "description": "QR.GenerarQRPlaza",
+        "peekOfCode": "imagen_qr = qr.make_image(fill='black', back_color='white')\n# Guardar el QR en un archivo\nimagen_qr.save(\"qr_PlazaPrincipal.png\")\n# Mostrar el QR usando matplotlib\nplt.imshow(imagen_qr)\nplt.axis('off')  # No mostrar ejes\nplt.show()\nprint(\"QR generado, guardado como qr_PlazaPrincipal.png y mostrado en pantalla.\")",
+        "detail": "QR.GenerarQRPlaza",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "conexionDB",
+        "description": "conexionDB",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "conexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "conexionDB",
+        "description": "conexionDB",
+        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "conexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "collection_turistas",
+        "kind": 5,
+        "importPath": "conexionDB",
+        "description": "conexionDB",
+        "peekOfCode": "collection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "detail": "conexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "conexionDB",
+        "description": "conexionDB",
+        "peekOfCode": "collection_lugares = db['lugar']",
+        "detail": "conexionDB",
+        "documentation": {}
+    },
+    {
+        "label": "TuristaDAO",
+        "kind": 6,
+        "importPath": "DAO",
+        "description": "DAO",
+        "peekOfCode": "class TuristaDAO:\n    # @staticmethod\n    def get_turistas():\n        # if id is not None and nombre is None and apellido is None and provincia is None and comentario is None:\n        #     return turista.collection_turistas.find({\"_id\": id})\n        # elif id is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"nombre\": nombre})\n        # elif id is not None and apellido is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"apellido\": apellido})\n        # elif id is not None and apellido is not None and nombre is not None and provincia is not None:",
+        "detail": "DAO",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "pruebas",
+        "description": "pruebas",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")",
+        "detail": "pruebas",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "pruebas",
+        "description": "pruebas",
+        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")\nturista.obtener_turista_por_nombre(\"Gabriel\")\nprint(\"turista por apellido: \")",
+        "detail": "pruebas",
+        "documentation": {}
+    },
+    {
+        "label": "collection_turistas",
+        "kind": 5,
+        "importPath": "pruebas",
+        "description": "pruebas",
+        "peekOfCode": "collection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")\nturista.obtener_turista_por_nombre(\"Gabriel\")\nprint(\"turista por apellido: \")\nturista.obtener_turista_por_apellido(\"Rearte\")\nprint(\"turistas por provincia: \")",
+        "detail": "pruebas",
+        "documentation": {}
+    },
+    {
+        "label": "Turista",
+        "kind": 6,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "class Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "turista_for_dao",
+        "kind": 6,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "class turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario\n        }",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "db",
+        "kind": 5,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "collection_turistas",
+        "kind": 5,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "collection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista\nclass turista_for_dao:\n    @staticmethod",
+        "detail": "turista",
+        "documentation": {}
+    }
+]
