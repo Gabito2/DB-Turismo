@@ -236,7 +236,7 @@
         "documentation": {}
     },
     {
-        "label": "turista",
+        "label": "Turista",
         "importPath": "turista",
         "description": "turista",
         "isExtraImport": true,
@@ -244,11 +244,91 @@
         "documentation": {}
     },
     {
-        "label": "obtener_ultimo_id",
-        "importPath": "QR.GenerarQRCristo",
-        "description": "QR.GenerarQRCristo",
+        "label": "Turista",
+        "importPath": "turista",
+        "description": "turista",
         "isExtraImport": true,
-        "detail": "QR.GenerarQRCristo",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "lugares_for_dao",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "isExtraImport": true,
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "Lugar",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "isExtraImport": true,
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "ReferenceField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "StringField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "ListField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "IntField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "FloatField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "EmbeddedDocumentField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "EmbeddedDocument",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "connect",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
         "documentation": {}
     },
     {
@@ -276,7 +356,23 @@
         "documentation": {}
     },
     {
-        "label": "connect",
+        "label": "ReferenceField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "EmbeddedDocumentField",
+        "importPath": "mongoengine",
+        "description": "mongoengine",
+        "isExtraImport": true,
+        "detail": "mongoengine",
+        "documentation": {}
+    },
+    {
+        "label": "EmbeddedDocument",
         "importPath": "mongoengine",
         "description": "mongoengine",
         "isExtraImport": true,
@@ -657,35 +753,80 @@
         "kind": 6,
         "importPath": "DAO",
         "description": "DAO",
-        "peekOfCode": "class TuristaDAO:\n    # @staticmethod\n    def get_turistas():\n        # if id is not None and nombre is None and apellido is None and provincia is None and comentario is None:\n        #     return turista.collection_turistas.find({\"_id\": id})\n        # elif id is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"nombre\": nombre})\n        # elif id is not None and apellido is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"apellido\": apellido})\n        # elif id is not None and apellido is not None and nombre is not None and provincia is not None:",
+        "peekOfCode": "class TuristaDAO:\n    def get_turistas():\n        # if id is not None and nombre is None and apellido is None and provincia is None and comentario is None:\n        #     return turista.collection_turistas.find({\"_id\": id})\n        # elif id is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"nombre\": nombre})\n        # elif id is not None and apellido is not None and nombre is not None:\n        #     return turista.collection_turistas.find({\"apellido\": apellido})\n        # elif id is not None and apellido is not None and nombre is not None and provincia is not None:\n        #     return turista.collection_turistas.find({\"provincia\": provincia})",
         "detail": "DAO",
+        "documentation": {}
+    },
+    {
+        "label": "Comentario",
+        "kind": 6,
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "class Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Lugares():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=100)\n    ubicacion = StringField(required=True , max_length=100) \n    # descripción = StringField(required=True, max_length=500)\n    # horario = StringField(required=True, max_length=500) \n    comentarios = ListField(EmbeddedDocumentField(Comentario))",
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "Lugares",
+        "kind": 6,
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "class Lugares():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=100)\n    ubicacion = StringField(required=True , max_length=100) \n    # descripción = StringField(required=True, max_length=500)\n    # horario = StringField(required=True, max_length=500) \n    comentarios = ListField(EmbeddedDocumentField(Comentario))\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios):",
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "lugares_for_dao",
+        "kind": 6,
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "class lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,\n            \"ubicacion\": ubicacion,\n            \"descripción\": descripción,\n            \"horario\": horario,\n            \"comentarios\": comentarios",
+        "detail": "lugaresTuristicos",
         "documentation": {}
     },
     {
         "label": "client",
         "kind": 5,
-        "importPath": "pruebas",
-        "description": "pruebas",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")",
-        "detail": "pruebas",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Lugares():",
+        "detail": "lugaresTuristicos",
         "documentation": {}
     },
     {
         "label": "db",
         "kind": 5,
-        "importPath": "pruebas",
-        "description": "pruebas",
-        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")\nturista.obtener_turista_por_nombre(\"Gabriel\")\nprint(\"turista por apellido: \")",
-        "detail": "pruebas",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Lugares():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=100)",
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "collection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Lugares():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=100)\n    ubicacion = StringField(required=True , max_length=100) \n    # descripción = StringField(required=True, max_length=500)",
+        "detail": "lugaresTuristicos",
         "documentation": {}
     },
     {
         "label": "collection_turistas",
         "kind": 5,
-        "importPath": "pruebas",
-        "description": "pruebas",
-        "peekOfCode": "collection_turistas = db['turista']\nprint(\"Todos los turistas: \")\nturista.obtener_todos_los_turistas()\nprint(\"turista id: \")\nturista.obtener_turista_por_id(1)\nprint(\"turista por nombre: \")\nturista.obtener_turista_por_nombre(\"Gabriel\")\nprint(\"turista por apellido: \")\nturista.obtener_turista_por_apellido(\"Rearte\")\nprint(\"turistas por provincia: \")",
-        "detail": "pruebas",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
+        "peekOfCode": "collection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Lugares():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=100)\n    ubicacion = StringField(required=True , max_length=100) \n    # descripción = StringField(required=True, max_length=500)\n    # horario = StringField(required=True, max_length=500) ",
+        "detail": "lugaresTuristicos",
+        "documentation": {}
+    },
+    {
+        "label": "Comentario",
+        "kind": 6,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "class Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = EmbeddedDocumentField(Comentario)\n# DAO para Turista",
+        "detail": "turista",
         "documentation": {}
     },
     {
@@ -693,7 +834,7 @@
         "kind": 6,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "class Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):",
+        "peekOfCode": "class Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = EmbeddedDocumentField(Comentario)\n# DAO para Turista\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia):",
         "detail": "turista",
         "documentation": {}
     },
@@ -702,7 +843,7 @@
         "kind": 6,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "class turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario\n        }",
+        "peekOfCode": "class turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            # \"comentario\": comentario\n        }",
         "detail": "turista",
         "documentation": {}
     },
@@ -711,7 +852,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)",
         "detail": "turista",
         "documentation": {}
     },
@@ -720,7 +861,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista",
+        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)",
         "detail": "turista",
         "documentation": {}
     },
@@ -729,7 +870,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "collection_turistas = db['turista']\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = StringField(max_length=200)\n# DAO para Turista\nclass turista_for_dao:\n    @staticmethod",
+        "peekOfCode": "collection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass Turista():\n    id = IntField(primary_key=True, required=True)\n    nombre = StringField(required=True, max_length=50)\n    apellido = StringField(required=True, max_length=50)\n    provincia = StringField(required=True, max_length=50)\n    comentario = EmbeddedDocumentField(Comentario)",
         "detail": "turista",
         "documentation": {}
     }

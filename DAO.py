@@ -1,9 +1,7 @@
 from turista import turista_for_dao
-from QR.GenerarQRCristo import obtener_ultimo_id 
+from lugaresTuristicos import lugares_for_dao
 
 class TuristaDAO:
-
-    # @staticmethod
     def get_turistas():
 
         # if id is not None and nombre is None and apellido is None and provincia is None and comentario is None:
@@ -24,3 +22,7 @@ class TuristaDAO:
         # else:
         if id is not None:
             return turista_for_dao.obtener_todos_los_turistas()
+    
+    def get_lugares():
+        if id is not None:
+            return lugares_for_dao.obtener_todos_los_lugares()
