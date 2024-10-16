@@ -1,13 +1,8 @@
 from mongoengine import ReferenceField, StringField, ListField, IntField, FloatField, EmbeddedDocumentField, EmbeddedDocument, connect
 from pymongo import MongoClient
-from turista import Turista
 
-
-#URL de MongoDB
 client = MongoClient("mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
-#Seleccionar la db
 db = client['Turismo']
-#Seleccionar la colección
 collection_lugares = db['lugar']
 collection_turistas = db['turista']
 
@@ -15,14 +10,6 @@ collection_turistas = db['turista']
 class Comentario(EmbeddedDocument):
     turista_id = ReferenceField('Turista')
     texto = StringField(required=True)
-
-class Lugares():
-    id = IntField(primary_key=True, required=True)
-    nombre = StringField(required=True, max_length=100)
-    ubicacion = StringField(required=True , max_length=100) 
-    # descripción = StringField(required=True, max_length=500)
-    # horario = StringField(required=True, max_length=500) 
-    comentarios = ListField(EmbeddedDocumentField(Comentario))
 
 class lugares_for_dao:
 
@@ -38,7 +25,7 @@ class lugares_for_dao:
         }
         collection_lugares.insert_one(lugar)
         print("Lugar creado")
-    
+
     @staticmethod
     def obtener_todos_los_lugares():
         for lugares in collection_lugares.find():
@@ -73,5 +60,3 @@ class lugares_for_dao:
     def obtener_lugar_por_visitas(visitas):
         for lugar in collection_lugares.find({"visitas": visitas}):
             print(lugar)
-
-
