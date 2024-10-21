@@ -10,7 +10,6 @@ class Comentario(EmbeddedDocument):
     turista_id = ReferenceField('Turista')
     texto = StringField(required=True)
 
-# DAO para Turista
 class turista_for_dao:
 
     @staticmethod
@@ -38,7 +37,6 @@ class turista_for_dao:
     def obtener_turistas_por_nombre_y_provincia(nombre, provincia):
         for turista in collection_turistas.find({"nombre": nombre, "provincia": provincia}):
             print(turista)
-
 
     @staticmethod
     def contar_turistas_por_provincia(provincia):
