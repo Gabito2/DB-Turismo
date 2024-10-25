@@ -1,19 +1,13 @@
-from mongoengine import Document, StringField, IntField, ReferenceField, EmbeddedDocumentField, EmbeddedDocument
 from pymongo import MongoClient
-from function.ConexionDB import collection_lugares
+from lugaresTuristicos import lugares_for_dao
 
 client = MongoClient("mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
 db = client['Turismo']
 collection_turistas = db['turista']
 
-class Comentario(EmbeddedDocument):
-    turista_id = ReferenceField('Turista')
-    texto = StringField(required=True)
-
 class turista_for_dao:
-
     @staticmethod
-    def crear_turista(id, nombre, apellido, provincia, comentario):
+    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):
         turista = {
             "_id": id,
             "nombre": nombre,
@@ -22,6 +16,10 @@ class turista_for_dao:
             "comentario": comentario
         }
         collection_turistas.insert_one(turista)
+
+        # Llamar al método para agregar el comentario en el lugar
+        lugares_for_dao.agregar_comentario_a_lugar(lugar_id, id, comentario)
+        print(f"Turista con ID {id} creado y comentario añadido al lugar con ID {lugar_id}.")
 
     @staticmethod
     def obtener_todos_los_turistas():
@@ -67,3 +65,18 @@ class turista_for_dao:
     def obtener_turistas_por_comentarios(comentarios):
         for turista in collection_turistas.find({"comentario": comentarios}):
             print(turista)
+
+    @staticmethod
+    def agregar_comentario_a_turista(turista_id, comentario_texto):
+        turista = collection_turistas.find_one({"_id": turista_id})
+        if turista:
+            comentario = {
+                "comentario": comentario_texto
+            }
+            collection_turistas.update_one(
+                {"_id": turista_id},
+                {"$push": {"comentario": comentario}}
+            )
+            print(f"Comentario añadido al turista {turista_id}.")
+        else:
+            print("Turista no encontrado.")

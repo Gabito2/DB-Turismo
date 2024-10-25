@@ -1,16 +1,11 @@
-from mongoengine import ReferenceField, StringField, ListField, IntField, FloatField, EmbeddedDocumentField, EmbeddedDocument, connect
 from pymongo import MongoClient
 from transformers import pipeline
-from pruebas import comentario
+# from turista import turista_for_dao
 
 client = MongoClient("mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
 db = client['Turismo']
 collection_lugares = db['lugar']
 collection_turistas = db['turista']
-
-class Comentario(EmbeddedDocument):
-    turista_id = ReferenceField('Turista')
-    texto = StringField(required=True)
 
 class lugares_for_dao:
 
@@ -27,14 +22,6 @@ class lugares_for_dao:
         }
         collection_lugares.insert_one(lugar)
         print("Lugar creado")
-
-    @staticmethod
-    def obtener_Estrellas_Comentarios(comentario):
-        #Analizador de los comentarios
-        analizador_sentimientos = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
-        #comentario = "esta bueno el lugar pero le falta sombra y tachos de basura"
-        resultado = analizador_sentimientos(comentario)
-        print("El comentario es: ", resultado)
 
     @staticmethod
     def obtener_todos_los_lugares():
@@ -85,3 +72,62 @@ class lugares_for_dao:
     def Obtener_lugar_por_visitas_menor(visitas):
         for lugar in collection_lugares.find({"visitas": {"$lt": visitas}}):
             print(lugar)
+
+    @staticmethod
+    def agregar_comentario_a_lugar(lugar_id, turista_id, comentario_texto):
+        comentario = {
+            "turista_id": turista_id,
+            "texto": comentario_texto
+        }
+        
+        collection_lugares.update_one(
+            {"_id": lugar_id},
+            {"$push": {"comentarios": comentario}}
+        )
+        print(f"Comentario añadido al lugar con ID {lugar_id}.")
+    
+    @staticmethod
+    def obtener_Estrellas_Comentarios(lugar_id):
+        # Obtiene el lugar por ID
+        lugar = collection_lugares.find_one({"_id": lugar_id})
+    
+        if lugar and "comentarios" in lugar:
+            # Analizador de sentimientos usando Transformers
+            analizador_sentimientos = pipeline("sentiment-analysis", model="nlptown/bert-base-multilingual-uncased-sentiment")
+            
+            # Listas de palabras clave
+            palabras_buenas = [
+                "encantó", "excelente", "fantástico", "maravilloso", "increíble", "bueno", "perfecto", "agradable", "sorprendente", "recomiendo"
+            ]
+
+            palabras_malas = [
+                "mala", "peor", "terrible", "horrible", "desagradable", "no recomiendo", "queja", "falló", "deficiente", "aburrido"
+            ]
+
+            # Procesa cada comentario
+            for comentario in lugar["comentarios"]:
+                texto = comentario["texto"]
+                
+                # Análisis de sentimientos usando listas de palabras clave
+                conteo_buenas = sum(1 for palabra in palabras_buenas if palabra in texto.lower())
+                conteo_malas = sum(1 for palabra in palabras_malas if palabra in texto.lower())
+
+                # Clasificación basada en los conteos
+                if conteo_buenas > conteo_malas:
+                    sentimiento = "Bueno"
+                elif conteo_buenas < conteo_malas:
+                    sentimiento = "Malo"
+                else:
+                    sentimiento = "Normal"
+                
+                # (Opcional) Análisis de sentimientos usando Transformers
+                resultado = analizador_sentimientos(texto)
+                label = resultado[0]['label']
+
+                # Comparar resultados de ambos métodos
+                print(f"Comentario: '{texto}' - Sentimiento (Palabras clave): {sentimiento} - Sentimiento (Transformers): {label}")
+
+        else:
+            print(f"No se encontró el lugar con ID {lugar_id} o no tiene comentarios.")
+
+

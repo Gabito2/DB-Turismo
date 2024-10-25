@@ -228,14 +228,6 @@
         "documentation": {}
     },
     {
-        "label": "collection_lugares",
-        "importPath": "function.ConexionDB",
-        "description": "function.ConexionDB",
-        "isExtraImport": true,
-        "detail": "function.ConexionDB",
-        "documentation": {}
-    },
-    {
         "label": "turista_for_dao",
         "importPath": "turista",
         "description": "turista",
@@ -252,115 +244,11 @@
         "documentation": {}
     },
     {
-        "label": "ReferenceField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
+        "label": "lugares_for_dao",
+        "importPath": "lugaresTuristicos",
+        "description": "lugaresTuristicos",
         "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "StringField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "ListField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "IntField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "FloatField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "EmbeddedDocumentField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "EmbeddedDocument",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "connect",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "Document",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "StringField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "IntField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "ReferenceField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "EmbeddedDocumentField",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
-        "documentation": {}
-    },
-    {
-        "label": "EmbeddedDocument",
-        "importPath": "mongoengine",
-        "description": "mongoengine",
-        "isExtraImport": true,
-        "detail": "mongoengine",
+        "detail": "lugaresTuristicos",
         "documentation": {}
     },
     {
@@ -372,19 +260,11 @@
         "documentation": {}
     },
     {
-        "label": "pipeline",
-        "importPath": "transformers",
-        "description": "transformers",
+        "label": "TextBlob",
+        "importPath": "textblob",
+        "description": "textblob",
         "isExtraImport": true,
-        "detail": "transformers",
-        "documentation": {}
-    },
-    {
-        "label": "comentario",
-        "importPath": "pruebas",
-        "description": "pruebas",
-        "isExtraImport": true,
-        "detail": "pruebas",
+        "detail": "textblob",
         "documentation": {}
     },
     {
@@ -725,7 +605,7 @@
         "kind": 5,
         "importPath": "conexionDB",
         "description": "conexionDB",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\n#Seleccionar la db\ndb = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
         "detail": "conexionDB",
         "documentation": {}
     },
@@ -734,7 +614,7 @@
         "kind": 5,
         "importPath": "conexionDB",
         "description": "conexionDB",
-        "peekOfCode": "db = client['Turismo']\n#Seleccionar la colección\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
+        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']",
         "detail": "conexionDB",
         "documentation": {}
     },
@@ -766,15 +646,6 @@
         "documentation": {}
     },
     {
-        "label": "Comentario",
-        "kind": 6,
-        "importPath": "lugaresTuristicos",
-        "description": "lugaresTuristicos",
-        "peekOfCode": "class Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,\n            \"ubicacion\": ubicacion,",
-        "detail": "lugaresTuristicos",
-        "documentation": {}
-    },
-    {
         "label": "lugares_for_dao",
         "kind": 6,
         "importPath": "lugaresTuristicos",
@@ -788,7 +659,7 @@
         "kind": 5,
         "importPath": "lugaresTuristicos",
         "description": "lugaresTuristicos",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,",
         "detail": "lugaresTuristicos",
         "documentation": {}
     },
@@ -797,7 +668,7 @@
         "kind": 5,
         "importPath": "lugaresTuristicos",
         "description": "lugaresTuristicos",
-        "peekOfCode": "db = client['Turismo']\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {",
+        "peekOfCode": "db = client['Turismo']\ncollection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,\n            \"ubicacion\": ubicacion,",
         "detail": "lugaresTuristicos",
         "documentation": {}
     },
@@ -806,7 +677,7 @@
         "kind": 5,
         "importPath": "lugaresTuristicos",
         "description": "lugaresTuristicos",
-        "peekOfCode": "collection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,",
+        "peekOfCode": "collection_lugares = db['lugar']\ncollection_turistas = db['turista']\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,\n            \"ubicacion\": ubicacion,\n            \"descripción\": descripción,",
         "detail": "lugaresTuristicos",
         "documentation": {}
     },
@@ -815,44 +686,44 @@
         "kind": 5,
         "importPath": "lugaresTuristicos",
         "description": "lugaresTuristicos",
-        "peekOfCode": "collection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,",
+        "peekOfCode": "collection_turistas = db['turista']\nclass lugares_for_dao:\n    @staticmethod\n    def crear_lugar(id, nombre, ubicacion, descripción, horario, comentarios, visitas):\n        lugar = {\n            \"_id\" : id,\n            \"nombre\": nombre,\n            \"ubicacion\": ubicacion,\n            \"descripción\": descripción,\n            \"horario\": horario,",
         "detail": "lugaresTuristicos",
         "documentation": {}
     },
     {
-        "label": "analizador_sentimientos",
-        "kind": 5,
+        "label": "analizar_comentario",
+        "kind": 2,
         "importPath": "pruebas",
         "description": "pruebas",
-        "peekOfCode": "analizador_sentimientos = pipeline(\"sentiment-analysis\", model=\"nlptown/bert-base-multilingual-uncased-sentiment\")\n# Analizar un comentario\ncomentario = \"esta bueno el lugar pero le falta sombra y tachos de basura\"\nresultado = analizador_sentimientos(comentario)\nprint(\"El comentario es: \", resultado)",
+        "peekOfCode": "def analizar_comentario(comentario):\n    # Convertir el comentario a minúsculas para una comparación insensible a mayúsculas\n    comentario = comentario.lower()\n    # Contadores para palabras buenas y malas\n    conteo_buenas = sum(1 for palabra in palabras_buenas if palabra in comentario)\n    conteo_malas = sum(1 for palabra in palabras_malas if palabra in comentario)\n    # Clasificación basada en los conteos\n    if conteo_buenas > conteo_malas:\n        return \"Bueno\"\n    elif conteo_buenas < conteo_malas:",
         "detail": "pruebas",
         "documentation": {}
     },
     {
-        "label": "comentario",
+        "label": "palabras_buenas",
         "kind": 5,
         "importPath": "pruebas",
         "description": "pruebas",
-        "peekOfCode": "comentario = \"esta bueno el lugar pero le falta sombra y tachos de basura\"\nresultado = analizador_sentimientos(comentario)\nprint(\"El comentario es: \", resultado)",
+        "peekOfCode": "palabras_buenas = [\n    \"encantó\", \"excelente\", \"fantástico\", \"maravilloso\", \"increíble\", \"bueno\", \"perfecto\", \"agradable\", \"sorprendente\", \"recomiendo\"\n]\npalabras_malas = [\n    \"mala\", \"peor\", \"terrible\", \"horrible\", \"desagradable\", \"no recomiendo\", \"queja\", \"falló\", \"deficiente\", \"aburrido\"\n]\ndef analizar_comentario(comentario):\n    # Convertir el comentario a minúsculas para una comparación insensible a mayúsculas\n    comentario = comentario.lower()\n    # Contadores para palabras buenas y malas",
         "detail": "pruebas",
         "documentation": {}
     },
     {
-        "label": "resultado",
+        "label": "palabras_malas",
         "kind": 5,
         "importPath": "pruebas",
         "description": "pruebas",
-        "peekOfCode": "resultado = analizador_sentimientos(comentario)\nprint(\"El comentario es: \", resultado)",
+        "peekOfCode": "palabras_malas = [\n    \"mala\", \"peor\", \"terrible\", \"horrible\", \"desagradable\", \"no recomiendo\", \"queja\", \"falló\", \"deficiente\", \"aburrido\"\n]\ndef analizar_comentario(comentario):\n    # Convertir el comentario a minúsculas para una comparación insensible a mayúsculas\n    comentario = comentario.lower()\n    # Contadores para palabras buenas y malas\n    conteo_buenas = sum(1 for palabra in palabras_buenas if palabra in comentario)\n    conteo_malas = sum(1 for palabra in palabras_malas if palabra in comentario)\n    # Clasificación basada en los conteos",
         "detail": "pruebas",
         "documentation": {}
     },
     {
-        "label": "Comentario",
-        "kind": 6,
-        "importPath": "turista",
-        "description": "turista",
-        "peekOfCode": "class Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,",
-        "detail": "turista",
+        "label": "comentarios",
+        "kind": 5,
+        "importPath": "pruebas",
+        "description": "pruebas",
+        "peekOfCode": "comentarios = [\n    \"Me encantó el lugar, volveré sin duda!\",\n    \"La atención fue muy mala, no recomiendo este lugar.\",\n    \"Fue una experiencia normal, nada especial.\"\n]\nfor comentario in comentarios:\n    clasificacion = analizar_comentario(comentario)\n    print(f\"Comentario: '{comentario}' -> Clasificación: {clasificacion}\")",
+        "detail": "pruebas",
         "documentation": {}
     },
     {
@@ -860,7 +731,7 @@
         "kind": 6,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "class turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario\n        }",
+        "peekOfCode": "class turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario\n        }",
         "detail": "turista",
         "documentation": {}
     },
@@ -869,7 +740,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,",
         "detail": "turista",
         "documentation": {}
     },
@@ -878,7 +749,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,",
+        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,",
         "detail": "turista",
         "documentation": {}
     },
@@ -887,7 +758,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "collection_turistas = db['turista']\nclass Comentario(EmbeddedDocument):\n    turista_id = ReferenceField('Turista')\n    texto = StringField(required=True)\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,",
+        "peekOfCode": "collection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario",
         "detail": "turista",
         "documentation": {}
     }
