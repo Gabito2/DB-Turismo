@@ -130,25 +130,25 @@ class lugares_for_dao:
         else:
             print(f"No se encontró el lugar con ID {lugar_id} o no tiene comentarios.")
 
-    @staticmethod
-    def lugar_con_mas_comentarios_positivos():
-        lugares = collection_lugares.find() 
-        conteos_positivos = {}
+    # @staticmethod
+    # def lugar_con_mas_comentarios_positivos():
+    #     lugares = collection_lugares.find() 
+    #     conteos_positivos = {}
 
-        for lugar in lugares:
-            if "comentarios" in lugar:
-                conteo_positivo = sum(
-                    1 for comentario in lugar["comentarios"]
-                    if any(palabra in comentario["texto"].lower() for palabra in [
-                        "encantó", "excelente", "fantástico", "maravilloso", "increíble", "bueno", "perfecto", "agradable", "sorprendente", "recomiendo"
-                    ])
-                )
-                conteos_positivos[lugar["_id"]] = conteo_positivo
+    #     for lugar in lugares:
+    #         if "comentarios" in lugar:
+    #             conteo_positivo = sum(
+    #                 1 for comentario in lugar["comentarios"]
+    #                 if any(palabra in comentario["texto"].lower() for palabra in [
+    #                     "encantó", "excelente", "fantástico", "maravilloso", "increíble", "bueno", "perfecto", "agradable", "sorprendente", "recomiendo"
+    #                 ])
+    #             )
+    #             conteos_positivos[lugar["_id"]] = conteo_positivo
 
-        # Determinar el lugar con el mayor número de comentarios positivos
-        if conteos_positivos:
-            lugar_maximo = max(conteos_positivos, key=conteos_positivos.get)
-            max_comentarios = conteos_positivos[lugar_maximo]
-            return lugar_maximo, max_comentarios
-        else:
-            return None, 0
+    #     # Determinar el lugar con el mayor número de comentarios positivos
+    #     if conteos_positivos:
+    #         lugar_maximo = max(conteos_positivos, key=conteos_positivos.get)
+    #         max_comentarios = conteos_positivos[lugar_maximo]
+    #         return lugar_maximo, max_comentarios
+    #     else:
+    #         return None, 0

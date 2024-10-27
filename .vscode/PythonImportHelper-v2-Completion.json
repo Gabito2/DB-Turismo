@@ -740,7 +740,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,",
+        "peekOfCode": "client = MongoClient(\"mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority\")\ndb = client['Turismo']\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,",
         "detail": "turista",
         "documentation": {}
     },
@@ -749,7 +749,7 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,",
+        "peekOfCode": "db = client['Turismo']\ncollection_turistas = db['turista']\ncollection_lugares = db['lugar']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,",
         "detail": "turista",
         "documentation": {}
     },
@@ -758,7 +758,16 @@
         "kind": 5,
         "importPath": "turista",
         "description": "turista",
-        "peekOfCode": "collection_turistas = db['turista']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario",
+        "peekOfCode": "collection_turistas = db['turista']\ncollection_lugares = db['lugar']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,",
+        "detail": "turista",
+        "documentation": {}
+    },
+    {
+        "label": "collection_lugares",
+        "kind": 5,
+        "importPath": "turista",
+        "description": "turista",
+        "peekOfCode": "collection_lugares = db['lugar']\nclass turista_for_dao:\n    @staticmethod\n    def crear_turista(id, nombre, apellido, provincia, comentario, lugar_id):\n        turista = {\n            \"_id\": id,\n            \"nombre\": nombre,\n            \"apellido\": apellido,\n            \"provincia\": provincia,\n            \"comentario\": comentario",
         "detail": "turista",
         "documentation": {}
     }

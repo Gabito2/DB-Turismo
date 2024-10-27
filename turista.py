@@ -4,6 +4,7 @@ from lugaresTuristicos import lugares_for_dao
 client = MongoClient("mongodb+srv://grearte:xS8fu8gVPAz9qGWm@cluster0.dffoict.mongodb.net/?retryWrites=true&w=majority")
 db = client['Turismo']
 collection_turistas = db['turista']
+collection_lugares = db['lugar']
 
 class turista_for_dao:
     @staticmethod
@@ -30,6 +31,23 @@ class turista_for_dao:
     def eliminar_turista_por_id(id):
         collection_turistas.delete_one({"_id": id})
         print(f"Turista con ID {id} eliminado.")
+
+    @staticmethod
+    def modificar_turista_y_comentario_en_lugar(turista_id, nombre, apellido, provincia, nuevo_comentario):
+        collection_turistas.update_one(
+            {"_id": turista_id},
+            {"$set": {"nombre": nombre, "apellido": apellido, "provincia": provincia, "comentario": nuevo_comentario}}
+        )
+        print(f"Turista con ID {turista_id} modificado en la colección de turistas.")
+
+    # Actualizar el comentario en los lugares donde esté este turista
+        collection_lugares.update_many(
+            {"comentarios.turista_id": turista_id},
+            {"$set": {"comentarios.$[elem].texto": nuevo_comentario}},
+            array_filters=[{"elem.turista_id": turista_id}]
+        )
+        print(f"Comentario del turista con ID {turista_id} modificado en la colección de lugares.")
+
 
     @staticmethod
     def obtener_turistas_por_nombre_y_provincia(nombre, provincia):
